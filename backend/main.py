@@ -6,7 +6,7 @@ from PyPDF2 import PdfReader
 
 app = Flask(__name__,template_folder="frontend")
 
-openai.api_key = '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'
+openai.api_key = 'security_key'
 
 UPLOAD_FOLDER = 'uploads'
 if not os.path.exists(UPLOAD_FOLDER):
