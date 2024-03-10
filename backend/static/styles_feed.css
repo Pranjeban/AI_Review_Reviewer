@@ -7,19 +7,10 @@
 
 /* Setting body background color and font */
 body {
-    background-color: #f8f9fa; /* Light gray background */
+    background-color: #d8e9d8; /* Light gray background */
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Modern sans-serif font */
 }
 
-/* Styling the container */
-.container {
-    max-width: 600px;
-    margin: 50px auto;
-    padding: 20px;
-    background-color: #ffffff; /* White background */
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-}
 
 /* Styling the h1 */
 h1 {
