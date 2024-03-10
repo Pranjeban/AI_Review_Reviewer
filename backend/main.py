@@ -3,11 +3,10 @@ import docx2txt
 import os
 from flask import Flask, render_template, request
 from PyPDF2 import PdfReader
-from keys import *
 
 app = Flask(__name__,template_folder="frontend")
 
-openai.api_key = key
+openai.api_key = 'your_api_key'
 
 UPLOAD_FOLDER = 'uploads'
 if not os.path.exists(UPLOAD_FOLDER):
