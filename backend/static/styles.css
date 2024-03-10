@@ -35,7 +35,7 @@ form {
 
 /* Styling the file input */
 input[type="file"] {
-    display: none;
+    display:block;
 }
 
 .custom-file-upload {
