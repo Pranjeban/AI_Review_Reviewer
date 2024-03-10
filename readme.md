@@ -16,7 +16,7 @@ The project is meticulously organized into the following directories:
   - `main.py`: Core backend application logic resides here.
   - `requirements.txt`: Lists all the essential Python dependencies required for backend operation.
 - **frontend/**: Contains the frontend code crafted in HTML, CSS, and JavaScript.
-  - `index.html`: Primary HTML file defines the structure of the frontend.
+  - `upload.html`: Primary HTML file defines the structure of the frontend.
   - `styles.css`: CSS file defines styles and layout for the frontend.
   - `script.js`: JavaScript file adds functionality to the frontend.
 
@@ -28,11 +28,11 @@ The backend is implemented using FlaskAPI, a lightweight Python web framework.
 
 - **POST /upload/**: Endpoint for uploading resume files and generating ChatGPT-powered feedback.
 
-## Frontend (`index.html`, `styles.css`, `script.js`)
+## Frontend (`upload.html`, `styles.css`, `script.js`)
 
 The frontend provides a user-friendly interface for seamless interaction with the application.
 
-### HTML (`index.html`)
+### HTML (`upload.html`)
 
 Defines the webpage's structure, including buttons and file input fields.
 
