@@ -33,18 +33,15 @@ form {
     text-align: center;
 }
 
-/* Styling the file input */
-input[type="file"] {
-    display:block;
-}
-
 .custom-file-upload {
     border: 1px solid #ccc;
     display: inline-block;
-    padding: 6px 12px;
+    padding: 10px 20px;
     cursor: pointer;
     border-radius: 4px;
     background-color: #f9f9f9;
+    color: #333; /* Darker text color */
+    font-size: 16px;
 }
 
 .custom-file-upload:hover {
@@ -55,10 +52,11 @@ input[type="file"] {
 input[type="submit"] {
     background-color: #4CAF50;
     color: white;
-    padding: 10px 20px;
+    padding: 12px 24px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition */
 }
 
 input[type="submit"]:hover {

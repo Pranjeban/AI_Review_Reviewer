@@ -6,7 +6,7 @@ from PyPDF2 import PdfReader
 
 app = Flask(__name__,template_folder="frontend")
 
-openai.api_key = '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'
+openai.api_key = 'your_api_key'
 
 UPLOAD_FOLDER = 'uploads'
 if not os.path.exists(UPLOAD_FOLDER):
@@ -53,7 +53,7 @@ def upload():
         response = openai.Completion.create(
             engine="gpt-3.5-turbo-instruct",
             prompt=prompt_text,
-            max_tokens=300,
+            max_tokens=500,
         )
         feedback = response.choices[0].text.strip()
     except Exception as e:
