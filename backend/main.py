@@ -6,7 +6,7 @@ from PyPDF2 import PdfReader
 
 app = Flask(__name__,template_folder="frontend")
 
-openai.api_key = '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'
+openai.api_key = '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'
 
 UPLOAD_FOLDER = 'uploads'
 if not os.path.exists(UPLOAD_FOLDER):
@@ -49,11 +49,11 @@ def upload():
         return f'Error processing resume file: {str(e)}'
 
     try:
-        prompt_text = f"Feedback on resume:\n{resume_text}\n###\n"
+        prompt_text = f"Feedback on resume:\n{resume_text}\n\nPlease provide constructive feedback on the applicant's resume. Highlight strengths, areas of improvement, and any specific recommendations for enhancing the overall presentation and content.\n###\n"
         response = openai.Completion.create(
             engine="gpt-3.5-turbo-instruct",
             prompt=prompt_text,
-            max_tokens=150
+            max_tokens=300,
         )
         feedback = response.choices[0].text.strip()
     except Exception as e:
