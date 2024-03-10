@@ -72,7 +72,7 @@ To integrate with OpenAI's ChatGPT model, replace `'your_api_key'` in `main.py` 
 ## Opening the Frontend
 
 ### Launch your web browser.
-Navigate to the index.html file within the project directory.
+Navigate to the upload.html file within the project directory.
 Uploading a Resume File
 ### Click the "Upload Resume" button.
 Select the desired resume file from your system.
